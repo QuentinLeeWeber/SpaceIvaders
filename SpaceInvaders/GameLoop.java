@@ -7,23 +7,24 @@ import javax.swing.JPanel;
 import javax.swing.JRootPane;
 import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
+import java.io.File;          
+import javax.imageio.ImageIO;    
 
-
-public class GameLoop extends JPanel implements Consts{
+    public class GameLoop extends JPanel implements Consts{
     
     private JFrame frame = new JFrame();
     public static Player player = new Player();
     private ArrayList<Enemy> enemies = new ArrayList<Enemy>();
     private ArrayList<Projectile> projectiles = new ArrayList<Projectile>();
     private ArrayList<Shield> shields = new ArrayList<Shield>();
-    Shield testShield = new Shield(1, 1);
-
+    Shield testShield = new Shield(200, 400 );
+    private Image image2;
     public GameLoop(){
 
     }
     
     
-    public void start(){
+        public void start(){
         frame.add(this);
         frame.setSize(width, height);
         frame.setTitle("Space Invaders");
@@ -32,6 +33,12 @@ public class GameLoop extends JPanel implements Consts{
         MyKeyEventDispatcher dispatcher = new MyKeyEventDispatcher();
         m.addKeyEventDispatcher(dispatcher);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            try{
+                image2 = ImageIO.read(new File("H:/Informatik/SpaceInvaders/space.png"));
+       
+            }catch(Exception e){
+        
+            }
         while(true){
             frame.repaint();
             //System.out.println("yeet");
@@ -42,14 +49,13 @@ public class GameLoop extends JPanel implements Consts{
         shields.clear();
         enemies.clear();
         projectiles.clear();
-        shields.add(new Shield(1, 1));
-        for(int i = 0; i < 10;i++){
-            shields.add(new Shield(i * 50, 40));
-        }
+        
+        shields.add(new Shield(200, 400));
     }
     
     @Override
     protected void paintComponent(Graphics g){
+        g.drawImage (image2, 0, 0, null); 
         g.setColor(new Color(255, 0, 0));
         g.fillRect(0, 0, 100, 100);
         player.draw(g);
@@ -73,3 +79,4 @@ public class GameLoop extends JPanel implements Consts{
         
     }
 }
+

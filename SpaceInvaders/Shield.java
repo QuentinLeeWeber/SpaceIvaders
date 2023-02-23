@@ -11,10 +11,11 @@ public class Shield implements Consts
         private int x, y, width, height;
         private int[][] shieldPixels;
         private Image image;
-        public Shield(int x, int y)
+        public Shield(int _x, int _y)
     {
+            x = _x; y= _y; 
         try{
-       image = ImageIO.read(new File("index.jpeg"));
+       image = ImageIO.read(new File("H:/Informatik/SpaceInvaders/ShieldTrek2.png"));
        
     }catch(Exception e){
         
@@ -23,7 +24,7 @@ public class Shield implements Consts
     
     public void draw(Graphics g){
     
-        g.drawImage(image, 0, 0, null);
+        g.drawImage(image, x, y, null);
     }
     
     public void collide(){

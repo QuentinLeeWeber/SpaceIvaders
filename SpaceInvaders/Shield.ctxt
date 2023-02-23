@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Shield
-comment1.params=x\ y
+comment1.params=_x\ _y
 comment1.target=Shield(int,\ int)
 comment2.params=g
 comment2.target=void\ draw(java.awt.Graphics)
