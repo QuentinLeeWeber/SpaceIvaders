@@ -15,7 +15,7 @@ public class Shield implements Consts
     {
             x = _x; y= _y; 
         try{
-       image = ImageIO.read(new File("H:/Informatik/SpaceInvaders/ShieldTrek2.png"));
+       image = ImageIO.read(new File("ShieldTrek2.png"));
        
     }catch(Exception e){
         
