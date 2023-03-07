@@ -34,7 +34,7 @@ import javax.imageio.ImageIO;
         m.addKeyEventDispatcher(dispatcher);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             try{
-                image2 = ImageIO.read(new File("space.png"));
+                image2 = ImageIO.read(new File("space2.jpg"));
        
             }catch(Exception e){
         
