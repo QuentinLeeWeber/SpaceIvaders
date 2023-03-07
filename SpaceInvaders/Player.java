@@ -13,7 +13,7 @@ public class Player implements Consts
 
     public Player(){
         try {
-        image = ImageIO.read (new File ("H:/Dokumente/Enterprise TopDown sniped.png"));
+        image = ImageIO.read (new File ("Enterprise TopDown sniped.png"));
     }    catch(Exception e) {
     }
     }
