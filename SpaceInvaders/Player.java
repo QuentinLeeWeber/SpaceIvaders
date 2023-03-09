@@ -32,10 +32,10 @@ public class Player implements Consts
     public void move(boolean dir){  
       if(dir == true)//1= heißt Beschreiben; 2== heißt Vergleichen 
       {
-          x= x- 20;
+          x= x- 5;
         }else {
  
-          x= x+ 20;
+          x= x+ 5;
         }
     }
     
