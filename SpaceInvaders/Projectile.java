@@ -12,8 +12,7 @@ public class Projectile implements Consts{
     }
     
     public void draw(Graphics g){
-        g.drawImage(GameLoop.image2, x, y, null);
-        System.out.println("hi");
+        g.drawImage(GameLoop.projectileImage, x, y, null);
     }
     
     public void collide(){

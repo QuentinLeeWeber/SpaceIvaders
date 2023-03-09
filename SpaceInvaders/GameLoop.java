@@ -22,6 +22,7 @@ import java.awt.image.BufferedImage;
     public static Image image2;
     
     public static BufferedImage projectileImage;
+    public static BufferedImage enemyImage;
     public GameLoop(){
 
     }
@@ -38,7 +39,8 @@ import java.awt.image.BufferedImage;
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             try{
                 image2 = ImageIO.read(new File("space.jpg"));
-                projectileImage = ImageIO.read(new File("shot.jpg"));
+                projectileImage = ImageIO.read(new File("shot.png"));
+                enemyImage = ImageIO.read(new File("enemy.png"));
             }catch(Exception e){
           
             }
@@ -64,13 +66,11 @@ import java.awt.image.BufferedImage;
         testShield.draw(g);
         System.out.println(projectiles.size());
         for(int i = 0; i < shields.size();i++){
-            System.out.println("pro3");
             shields.get(i).draw(g);
             
         }
         for(int i = 0; i < projectiles.size();i++){
             projectiles.get(i).draw(g);
-            System.out.println("pro2");
         }
         for(int i = 0; i < enemies.size();i++){
             enemies.get(i).draw(g);
