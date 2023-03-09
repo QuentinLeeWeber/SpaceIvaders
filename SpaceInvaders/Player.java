@@ -16,11 +16,14 @@ public class Player implements Consts
         image = ImageIO.read (new File ("Enterprise TopDown sniped.png"));
     }    catch(Exception e) {
     }
+    x = 1980 / 2;
+        y = 700;
     }
  
     public void draw(Graphics g){
         
         g.drawImage(image, x, y, null);
+        
     }
     public void collide(){
         //x = x - 1;
