@@ -57,6 +57,7 @@ import java.awt.image.BufferedImage;
         projectiles.clear();
         projectiles.add(new Projectile(100, 100));
         shields.add(new Shield(200, 400));
+        enemies.add(new Enemy(500, 500));
     }
     
     @Override

@@ -5,9 +5,10 @@ public class Enemy implements Consts{
     
     int x, y;
     
-    public Enemy()
+    public Enemy(int _x, int _y)
     {
-
+        x = _x;
+        y = _y;
     }
     
     public void draw(Graphics g){
