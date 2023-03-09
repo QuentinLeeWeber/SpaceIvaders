@@ -25,6 +25,8 @@ public class Shield implements Consts
     public void draw(Graphics g){
     
         g.drawImage(image, x, y, null);
+        x = 200;
+        y= 550;
     }
     
     public void collide(){
