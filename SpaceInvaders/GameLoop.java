@@ -42,7 +42,7 @@ import java.awt.image.BufferedImage;
                 projectileImage = ImageIO.read(new File("shot.png"));
                 enemyImage = ImageIO.read(new File("enemy.png"));
             }catch(Exception e){
-          
+                e.printStackTrace();
             }
         newGame();
         while(true){
@@ -65,7 +65,6 @@ import java.awt.image.BufferedImage;
         g.drawImage (image2, 0, 0, null); 
         player.draw(g);
         testShield.draw(g);
-        System.out.println(projectiles.size());
         for(int i = 0; i < shields.size();i++){
             shields.get(i).draw(g);
             
