@@ -1,6 +1,5 @@
 import java.awt.Graphics;
-
-public class Projectile implements Consts{
+public class Projectile{
 
     int x = 0;
     int y = 0;
@@ -12,7 +11,7 @@ public class Projectile implements Consts{
     }
     
     public void draw(Graphics g){
-        g.drawImage(GameLoop.projectileImage, x, y, null);
+        g.drawImage(Consts.projectileImage, x, y, null);
     }
     
     public void collide(){

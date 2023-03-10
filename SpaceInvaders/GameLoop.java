@@ -11,7 +11,7 @@ import java.io.File;
 import javax.imageio.ImageIO;  
 import java.awt.image.BufferedImage; 
 
-    public class GameLoop extends JPanel implements Consts{
+    public class GameLoop extends JPanel{
     
     private JFrame frame = new JFrame();
     public static Player player = new Player();
@@ -19,35 +19,31 @@ import java.awt.image.BufferedImage;
     private static ArrayList<Projectile> projectiles = new ArrayList<Projectile>();
     private static ArrayList<Shield> shields = new ArrayList<Shield>();
     Shield testShield = new Shield(200, 400 );
-    public static Image image2;
-    
-    public static BufferedImage projectileImage;
-    public static BufferedImage enemyImage;
     public GameLoop(){
 
     }
     
-    
-        public void start(){
+    public void start(){
         frame.add(this);
-        frame.setSize(width, height);
+        frame.setSize(Consts.width, Consts.height);
         frame.setTitle("Space Invaders");
         frame.setVisible(true);
         KeyboardFocusManager m = KeyboardFocusManager.getCurrentKeyboardFocusManager();
         MyKeyEventDispatcher dispatcher = new MyKeyEventDispatcher();
         m.addKeyEventDispatcher(dispatcher);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            try{
-                image2 = ImageIO.read(new File("space.jpg"));
-                projectileImage = ImageIO.read(new File("shot.png"));
-                enemyImage = ImageIO.read(new File("enemy.png"));
-            }catch(Exception e){
-                e.printStackTrace();
-            }
+        try{
+            Consts.backgroundImage = ImageIO.read(new File("tex/space.jpg"));
+            Consts.projectileImage = ImageIO.read(new File("tex/shot.png"));
+            Consts.enemyImage = ImageIO.read(new File("tex/enemy.png"));
+            Consts.playerImage = ImageIO.read(new File("tex/Enterprise TopDown sniped.png"));
+            Consts.shieldImage = ImageIO.read(new File("tex/ShieldTrek2.png"));
+        }catch(Exception e){
+            e.printStackTrace();
+        }
         newGame();
         while(true){
             frame.repaint();
-            //System.out.println("yeet");
         }
     }
     
@@ -62,7 +58,8 @@ import java.awt.image.BufferedImage;
     
     @Override
     protected void paintComponent(Graphics g){
-        g.drawImage (image2, 0, 0, null); 
+        MyKeyEventDispatcher.update();
+        g.drawImage(Consts.backgroundImage, 0, 0, null); 
         player.draw(g);
         testShield.draw(g);
         for(int i = 0; i < shields.size();i++){
