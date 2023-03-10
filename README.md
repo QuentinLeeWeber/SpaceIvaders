@@ -1,3 +1,3 @@
-# SpaceIvaders
+# SpaceInvaders
 
 gg anderson
