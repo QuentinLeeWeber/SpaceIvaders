@@ -33,6 +33,6 @@ if there are no errors, in the build directory you should have your class tree
 move to the build directory and do a
 
 -->	jar cvf YourJar.jar *
---> (alt) java Start
+--> (alt) java Start (public static void main(String[] args))
 
 For adding manifest check jar command line switches
