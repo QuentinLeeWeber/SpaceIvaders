@@ -18,11 +18,14 @@ public class Player{
     }
     
     public void move(boolean dir){  
-        if(dir == true)//1= heißt Beschreiben; 2== heißt Vergleichen 
+        if(dir == true && !(x <= 0))//1= heißt Beschreiben; 2== heißt Vergleichen 
         {
-            x= x - 5;
-        }else {
-            x= x + 5;
+            x= x - 10;
+            return;
+        } 
+        if(dir == false && !(x >= Consts.width - 150)){
+            x= x + 10;
+            return;
         }
     }
     
