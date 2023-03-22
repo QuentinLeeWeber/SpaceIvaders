@@ -24,6 +24,14 @@ public class Shield{
    public void move(boolean dir){
         
     }
+    
+    public int getX(){
+        return x;
+    }
+    
+    public int getY(){
+        return y;
+    }
 
 }
     
