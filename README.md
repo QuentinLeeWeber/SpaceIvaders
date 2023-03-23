@@ -7,3 +7,4 @@
 - mehr kugelwillys vonn den gegnern bei höherem Level
 - power ups
 - die leben nicht mehr neu starten 
+- schrift nicht übers Gesicht von Würstengulasch (mehr mittig plazieren)
