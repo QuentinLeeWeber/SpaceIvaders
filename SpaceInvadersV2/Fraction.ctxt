@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Fraction
+comment1.params=_x\ _y\ _type
+comment1.target=Fraction(int,\ int,\ int)
+comment2.params=g
+comment2.target=void\ draw(java.awt.Graphics)
+comment3.params=
+comment3.target=int\ getY()
+numComments=4

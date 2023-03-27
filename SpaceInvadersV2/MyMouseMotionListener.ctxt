@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=MyMouseMotionListener
+comment1.params=e
+comment1.target=void\ mouseDragged(java.awt.event.MouseEvent)
+comment2.params=e
+comment2.target=void\ mouseMoved(java.awt.event.MouseEvent)
+numComments=3

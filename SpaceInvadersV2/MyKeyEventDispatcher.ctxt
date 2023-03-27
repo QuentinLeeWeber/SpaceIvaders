@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=MyKeyEventDispatcher
+comment1.params=
+comment1.target=void\ update()
+comment2.params=e
+comment2.target=boolean\ dispatchKeyEvent(java.awt.event.KeyEvent)
+numComments=3

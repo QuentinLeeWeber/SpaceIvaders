@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Biden
+comment1.params=
+comment1.target=Biden()
+comment2.params=g
+comment2.target=void\ draw(java.awt.Graphics)
+comment3.params=
+comment3.target=void\ click()
+comment4.params=_x\ _y
+comment4.target=void\ updateMouse(int,\ int)
+numComments=5

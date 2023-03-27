@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Enemy
+comment1.params=_x\ _y
+comment1.target=Enemy(int,\ int)
+comment2.params=g
+comment2.target=void\ draw(java.awt.Graphics)
+comment3.params=
+comment3.target=void\ update()
+comment4.params=
+comment4.target=void\ collide()
+comment5.params=dir
+comment5.target=void\ move(boolean)
+comment6.params=
+comment6.target=int\ getX()
+comment7.params=
+comment7.target=int\ getY()
+comment8.params=
+comment8.target=int\ getHitX()
+comment9.params=
+comment9.target=int\ getHitY()
+numComments=10

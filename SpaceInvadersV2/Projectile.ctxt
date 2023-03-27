@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Projectile
+comment1.params=_x\ _y\ _isFriendly
+comment1.target=Projectile(int,\ int,\ boolean)
+comment2.params=g
+comment2.target=void\ draw(java.awt.Graphics)
+comment3.params=
+comment3.target=void\ collide()
+comment4.params=dir
+comment4.target=void\ move(boolean)
+comment5.params=
+comment5.target=int\ getX()
+comment6.params=
+comment6.target=int\ getY()
+comment7.params=
+comment7.target=int\ getHitX()
+comment8.params=
+comment8.target=int\ getHitY()
+numComments=9
