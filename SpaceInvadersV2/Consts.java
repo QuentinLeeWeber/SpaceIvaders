@@ -10,7 +10,7 @@ public class Consts{
     
     public static final float fractionAcceleration = 0.5f;
     
-    public static final int bidenChance = 1000;
+    public static final int bidenChance = 500;
     
     public static BufferedImage backgroundImage;
     public static BufferedImage projectileImage;
