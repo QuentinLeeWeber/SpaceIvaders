@@ -1,4 +1,4 @@
 # SpaceInvaders
 
-#todo
-- power ups
+dieses project wurde mit bluej umgesetzt, was zu vielen dateien führt
+
