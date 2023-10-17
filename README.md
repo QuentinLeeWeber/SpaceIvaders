@@ -1,4 +1,4 @@
 # SpaceInvaders
 
-dieses project wurde mit bluej umgesetzt, was zu vielen dateien führt
+dieses projekt wurde mit bluej umgesetzt, was zu vielen dateien führt
 
